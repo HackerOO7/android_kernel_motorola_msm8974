@@ -363,6 +363,8 @@ struct mdss_panel_info {
 	u32 height_pix_align;
 	u32 min_width;
 	u32 min_height;
+	u32 min_fps;
+	u32 max_fps;
 
 	u32 cont_splash_enabled;
 	u32 cont_splash_feature_on;
@@ -376,6 +378,7 @@ struct mdss_panel_info {
 	bool dynamic_cabc_enabled;
 	enum cabc_mode cabc_mode;
 	char supplier[8];
+	u32 bl_shutdown_delay;
 
 	uint32_t panel_dead;
 	bool dynamic_switch_pending;
